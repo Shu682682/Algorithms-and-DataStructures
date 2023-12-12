@@ -1,0 +1,57 @@
+Development Environment Description:
+
+- Node.js Version: v21.2.0
+- React Version: 1@1.0.0
+- Typescript: Version: 5.3.3
+- Browser: Chrome 
+- Operating System: macOS Monterey 12.6
+- Computer Architecture: Apple Mac
+
+
+Code Testing Process Description:
+1. Server Setup: A Node.js server is created using Express, typescript to serve static files from the 'public' directory and listens on port 80.
+2. Running the Server: Execute node webserver.js or npm start to start the server.
+3. Webpage Testing: Access http://127.0.0.1/ in a browser to view the Go Information Introduction webpage and verify its content and functionality.
+
+
+SourceFile Description:
+- server.js: v21.2.0
+- package.json: 
+    express: Version ^4.18.2
+    request: Version ^2.88.2 (Note: Deprecated)
+    rquest: Version ^0.1.0 (Possible typo or incorrect package)
+    @babel/plugin-proposal-private-property-in-object: latest
+- tscofig.json:
+    target: es2016
+    module: commonjs
+    strict: Enabled to enforce strict type-checking.
+    skipLibCheck: Enabled to skip type checking of all .d.ts declaration files.
+
+
+Configuration Steps:
+1. Ensure typescript, node.js, express, react are all installed and configured.
+2. Install Dependencies run npm install to create json.
+3. Defined inofrmation class in both JavaScript and TypeScript files, has private properties _author and _time with getters and setters. It includes a printInfo method to display the author's name and time on the webpage.
+   A sayHi function in both files triggers an alert message. TypeScript specifies the parameter as a string type.
+   An Information object is created with "Shu Yu" as the author and "2023" as the time, use two buttons are set with event handlers: one for the sayHi function and the other for Information's printInfo method. TypeScript uses arrow functions for these handlers.
+   Using Window Load Event to deal with handlers are assigned within window.onload to ensure proper setup after the webpage loads.
+
+
+CSS: 
+- Global Styles: Sets all elements' padding and margins to zero, unifies sizing with 'border-box', and applies a default font.
+- Heading Styles: Styles headings (h1 to h6) to appear in normal weight, not bold.
+- Class and ID Styles: Defines styles for specific classes (.active, .player) and IDs (#piechart).
+- Header Styles: Adds backgrounds and adjusts font sizes in the header section, including a background image for div.top.
+- Navigation Bar Styles: Gives the nav bar a black background and arranges list items in a row with space.
+- Main Content Layout: Uses a flexible layout in the main area with responsive sections left and right.
+- Image and Text Styling: Sets specific sizes, margins, and colors for images and texts.
+- Table Styles for China Section: Styles tables in .china with white-bordered cells, green header backgrounds, and white text.
+
+
+HTML: 
+- Head Section: Defines character set, viewport settings, page title ("Go Information Introduction website"), and links to an external CSS stylesheet. It also contains embedded CSS styling for various elements like headers, navigation bar, main content, images, and tables.
+- Body Content:
+    Header: Contains a top division with a title and a brief description of Go, and a navigation bar with links to different pages.
+    Main Content: Divided into two sections (left and right). The left section includes characteristics of Go with images, and a table detailing aspects like game complexity. The right section provides detailed information about Go, including its history, culture, and significant terms in the game.
+
+ShuYu2023

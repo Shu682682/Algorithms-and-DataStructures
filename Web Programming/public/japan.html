@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Go Introduction</title>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ["chess game", "Bonus(yuan)"],
+        ["Chess Saint", 45000000],
+        ["Ten segments", 7000000],
+        ["Honinbo", 28000000],
+        ["Gi Sun", 8000000],
+        ["Celebrity", 30000000],
+        ["Throne", 14000000],
+        ["Tien Yuan", 13000000],
+        ]);
+
+        var options = {
+          title: "Pie chart of Japan’s seven major chess",
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <link rel="stylesheet" href="./style.css" />
+  
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <h1>Go Information Introduction Website</h1>
+        <button id="Say Hi">Say Hi</button>
+        <button id="Print Information">Print My Information</button>
+        <script src="app.js"></script>
+        <h3>
+          Go is a strategic chess game that uses a grid-shaped chessboard and black and white chess pieces. It originated in China. In ancient China, it had many names such as "chess", "qi", and "hand talk". It belongs to the four arts of chess, calligraphy and painting.
+        </h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="active" href="./index.html">Home</a></li>
+          <li><a href="./korea.html">Korea Go</a></li>
+          <li><a href="./japan.html">Japan Go</a></li>
+          <li><a href="./china.html">China Go</a></li>
+          <li><a href="./taiwan.html">Taiwan Go</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="japan">
+          <img
+            src="./Nihon_Ki-in_Headquarter_(2016-05-05)_5.jpg"
+            alt="日本棋院"
+          />
+          <div class="info">
+            <p>
+              Nippon Go Academy is the largest Go management organization in Japan and is responsible for organizing various Go games. The headquarters is located in Chiyoda-ku, Tokyo, with other central and Kansai headquarters in Nagoya and Osaka. Currently, there are about 300 chess players under the Nippon Chess Academy.
+            </p>
+            <p>
+              The Nippon Go Academy was founded in 1924 by the merger of the two largest Go organizations at the time, Honinbomon and Hoensha, with the support of Okura Kishichiro. After the establishment of Nippon Chess Academy, it competed with organizations or individuals such as Chess Society, Wu Qingyuan, and Go News Society. In 1950, some chess players from Kansai, headed by Utaro Hashimoto, left Nippon Ki-in and founded their own Kansai chess-in.
+            </p>
+            <p>Organization</p>
+            <ul>
+              <li>Tokyo</li>
+              <li>Kansai</li>
+              <li>Middle</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="competition">
+          <div class="text">
+            <h3>Japan Chess Academy Title Tournament</h3>
+            <p>
+              The seven major Japanese Go tournaments, in order of prize money, are Go Master, Celebrity, Honinbo, Throne, Tengen, Kaisei and Judan. Among them, the three tournaments with higher prize money are the Chess Master, Celebrity, and Honinbo, which are collectively called the "Three Major Championships." Among them, Chess Master is the highest title. If you win these three titles at the same time, it is called the "Triple Crown."
+              There are many chess tournaments in which professional chess players compete for the championship, but what is the difference between the "Seven Big Chess Tournaments" where seven titles are competed and other tournaments?
+            </p>
+            <p>
+              The biggest feature of the seven major chess tournaments is that all chess players can participate. Of course, the methods of determining challengers are different. Celebrity tournaments and Honinbo tournaments enter the loop after pre-selection. Entering the circle can prove that you are already a first-class chess player.
+            </p>
+            <p>Prize money for title matches is as follows:</p>
+
+            <ul>
+              <li>Chess Master: 45 million yen</li>
+              <li>Tenth Dan: 7 million yen</li>
+              <li>Honinbo: 28 million yen</li>
+              <li>Qi Sheng: 8 million yen</li>
+              <li>Celebrity: 30 million yen</li>
+              <li>Throne: 14 million yen</li>
+              <li>Tianyuan: 13 million yen</li>
+            </ul>
+          </div>
+          <div id="piechart"></div>
+        </div>
+      </section>
+    </main>
+    <script
+      color="0,0,0"
+      opacity="0.3"
+      z-index="-2"
+      count="99"
+      src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+      integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
